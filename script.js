@@ -7,8 +7,8 @@ const calcTime = () => {
 			hours = date.getHours(),
 			mins  = date.getMinutes()
 
-	hours > 12 && (sal = "afternoon")
-	hours > 18 && (sal = "evening")
+	hours > 11 && (sal = "afternoon")
+	hours > 17 && (sal = "evening")
 	hours > 21 && (sal = "night")
 	hours > 11 && hours < 24 && (ampm = "PM")
 	hours > 12 && (hours -= 12)
